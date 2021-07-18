@@ -20,9 +20,7 @@ title: Yaman's Blog                          # the main title
 tagline: Software Developer at Wizergos   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Fullstack developer with experience in Python, React, AWS etc.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://yamanahlawat.github.io'
@@ -50,7 +48,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 # --------------------------
 
 google_analytics:
-  id: ''              # fill in your Google Analytics ID
+  id: 'UA-202603165-1'              # fill in your Google Analytics ID
   # Google Analytics page views report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
