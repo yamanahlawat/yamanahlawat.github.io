@@ -17,7 +17,7 @@ timezone: Asia/Kolkata
 # --------------------------
 title: Yaman's Blog                          # the main title
 
-tagline: Software Developer at Wizergos   # it will display as the sub-title
+tagline: Fullstack developer at Gale Partners   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Fullstack developer with experience in Python, React, AWS etc.
