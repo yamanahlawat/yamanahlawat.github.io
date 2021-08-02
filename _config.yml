@@ -17,7 +17,7 @@ timezone: Asia/Kolkata
 # --------------------------
 title: Yaman's Blog                          # the main title
 
-tagline:   # it will display as the sub-title
+tagline: Senior Fullstack developer at Gale Partners   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Senior Fullstack developer with experience in Python, React, AWS etc.
