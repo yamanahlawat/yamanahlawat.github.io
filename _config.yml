@@ -17,10 +17,10 @@ timezone: Asia/Kolkata
 # --------------------------
 title: Yaman's Blog                          # the main title
 
-tagline: Fullstack developer at Gale Partners   # it will display as the sub-title
+tagline: Senior Fullstack developer at Gale Partners   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Fullstack developer with experience in Python, React, AWS etc.
+  Senior Fullstack developer with experience in Python, React, AWS etc.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://yamanahlawat.github.io'
