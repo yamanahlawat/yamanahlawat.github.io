@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Update uv pyproject.toml Dependencies"
+title: "Auto update uv pyproject.toml dependencies"
 date: 2024-12-05 10:00:00 +0000
 categories: [python, uv-package-manager, scripts]
 tags: [python, uv, pyproject, automation, tomli]
