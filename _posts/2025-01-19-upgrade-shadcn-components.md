@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Quick Bulk Update Script for shadcn/ui Components"
-date: 2024-01-19 12:00:00 +0000
+title: "Automatically Update all installed shadcn/ui Components"
+date: 2025-01-19 12:00:00 +0000
 categories: [nextjs, shadcn-ui]
 tags: [nextjs, shadcn, automation]
 ---
