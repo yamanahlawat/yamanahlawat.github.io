@@ -6,22 +6,36 @@ categories: [python, uv-package-manager, scripts]
 tags: [python, uv, pyproject, automation, tomli]
 ---
 
-Unlike pip-tools, `uv` package manager currently doesn't support automatically updating `pyproject.toml` based on the lock file. This script helps automate that process by reading the versions from `uv.lock` and updating your `pyproject.toml` accordingly.
+Unlike pip-tools, `uv` package manager currently doesn't support automatically updating `pyproject.toml` based on the lock file. This script helps automate that process by automatically running `uv lock -U` and then updating your `pyproject.toml` with the latest versions.
 
 ### Features of the Script
-- Automatically updates both main dependencies and dependency groups
-- Removes duplicate version constraints
+- **Fully automated**: Runs `uv lock -U` automatically before updating `pyproject.toml`
+- Updates both main dependencies and dependency groups
 - Preserves dependency extras (e.g., `fastapi[standard]`)
-- Creates a backup of `pyproject.toml` before making changes
+- Removes duplicate version constraints
+- Clear progress indicators with success/failure feedback
+- Shows exactly which dependencies were updated
+- Proper error handling for missing `uv` command
 
 ### Prerequisites
-- Python 3.11+
+- Python 3.11+ (for built-in `tomllib`)
 - `tomli-w` package (`pip install tomli-w`)
-- An updated `uv.lock` file (`uv lock --update` or `uv lock -U`)
+- `uv` installed and available in PATH
 
 ### Usage Instructions
-1. Update your lock file: `uv lock -U`
-2. Run the script: `python upgrade_pyproject.py`
+Simply run the script:
+```bash
+python upgrade_pyproject.py
+```
+
+The script will automatically:
+1. Run `uv lock -U` to update all dependencies to their latest versions
+2. Parse the updated lock file
+3. Update your `pyproject.toml` to match the lock file versions
+4. Display all changes made
+
+### What's New
+The updated script now handles the entire workflow in one command. No need to manually run `uv lock -U` first - the script does it all for you! It also provides better visual feedback with progress indicators and shows the output from the lock update process.
 
 ### Script
 You can find the full script below:
